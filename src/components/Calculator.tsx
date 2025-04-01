@@ -118,7 +118,7 @@ const Calculator: React.FC = () => {
           }}
         />
         <Grid container spacing={1} sx={{ p: '0.5rem' }}>
-            <Grid item xs={12}>
+            <Grid>
             <Button
                 fullWidth
                 variant="contained"
@@ -132,7 +132,7 @@ const Calculator: React.FC = () => {
         
         {/* Number Buttons */}
         {[1,2,3,4,5,6,7,8,9,0].map((num) => (
-            <Grid item xs={3} key={num}>
+            <Grid key={num}>
                 <Button
                 fullWidth
                 variant="outlined"
@@ -146,7 +146,7 @@ const Calculator: React.FC = () => {
 
         {/* Operators */}
         {['/', '*', '-', '+'].map((op) => (
-            <Grid item xs={3} key={op}>
+            <Grid key={op}>
                 <Button
                 fullWidth
                 variant="contained"
@@ -160,7 +160,7 @@ const Calculator: React.FC = () => {
         ))}
 
         {/* Decimal and Equals */}
-            <Grid item xs={3}>
+            <Grid>
             <Button
                 fullWidth
                 variant="outlined"
@@ -170,7 +170,7 @@ const Calculator: React.FC = () => {
                 .
             </Button>
             </Grid>
-            <Grid item xs={3}>
+            <Grid>
             <Button
                 fullWidth
                 variant="contained"
