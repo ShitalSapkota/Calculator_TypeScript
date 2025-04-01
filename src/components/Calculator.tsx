@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Calculator = () => {
+const Calculator: React.FC = () => {
   const classes = useStyles();
   const [display, setDisplay] = useState('0');
   const [expression, setExpression] = useState('');
